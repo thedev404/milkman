@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --width: 100vw;
+  --height: 100vh;
+  --primary-color: #007FFF;
+  --secondary-color: #63a4ff;
+  --tertiary-color: #F0F8FF;
+  --roboto: "Roboto", sans-serif;
+  --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --box-shadow-hover: 1px 1px 17px 1px rgba(0, 0, 0, 0.16);
+  --blue-gradient: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+  --yellow-gradient: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: var(--width);
+  font-family: var(--roboto);
+  height: var(--height);
+  background: var(--blue-gradient);
+  overflow-x: hidden;
+}
+
+.flex-box {
+  width: var(--width);
+  height: var(--height);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+table {
+  width: 100vw;
+}
+
+.date_container {
+  padding: 3rem 4rem;
+  text-align: center;
+  font-size: 2rem;
+  box-shadow: var(--box-shadow-hover);
+  margin-bottom: 2rem;
+  background-color: #eee;
+  border-radius: 1rem;
+}
+
+#time {
+  margin-top: 1rem;
+}
+
+#day {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+table {
+  width: 45vw;
+  text-align: center;
+}
+
+th {
+  font-weight: normal;
+}
+
+tr,
+td,
+th {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+
+th {
+  background: var(--primary-color);
+}
+
+tr {
+  background: var(--secondary-color);
+}
+
+tr:nth-child(2n) {
+  background: var(--tertiary-color);
+}
+
+tr:last-child {
+  background: var(--primary-color);
+}
+
+td input {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  background-color: var(--secondary-color);
+  text-align: center;
+  font-weight: 500;
+}
+
+tr:nth-child(2n) input {
+  background-color: var(--tertiary-color);
+}
+
+td:last-child {
+  padding: 0;
+  margin: 0;
+}
+
+#totalAmt {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+#btn,
+button {
+  background: var(--primary-color);
+  color: #efefef;
+  padding: 1.2rem 2rem;
+  font-family: "Helvetica", arial, sans-serif;
+  font-size: 1.8rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 30vw;
+  margin-top: 1rem;
+}
+
+.cash {
+  margin-top: 2rem;
+}
+
+#bal {
+  font-size: 2rem;
+  width: 15rem;
+}
+
+@media (min-width: 400px) {
+  table {
+    width: 90vw;
+    text-align: center;
+  }
+td input{
+  font-size: 2.2rem;
+}
+  tr,
+  td,
+  th {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 1.7rem;
+  }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Milk Man - Milk Calculator</title>
+</head>
+
+<body class="flex-box">
+  <div class="date_container">
+    <div>
+      <span id="date"></span>
+      <span id="day"></span>
+    </div>
+    <div id="time"></div>
+  </div>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Unit</th>
+      <th>Quantity</th>
+    </tr>
+    <tr>
+      <td>Full-Cream</td>
+      <td class="tdPrice"></td>
+      <td class="unit">Kg</td>
+      <td><input type="number" name="myInput" /></td>
+    </tr>
+    <tr>
+      <td>Cow-Milk</td>
+      <td class="tdPrice"></td>
+      <td class="unit">Kg</td>
+      <td><input type="number" name="myInput" /></td>
+    </tr>
+    <tr>
+      <td>Cow-Litre</td>
+      <td class="tdPrice"></td>
+      <td class="unit">Kg</td>
+      <td><input type="number" name="myInput" /></td>
+    </tr>
+    <tr>
+      <td>Super-Tea</td>
+      <td class="tdPrice"></td>
+      <td class="unit">Pcs</td>
+      <td><input type="number" name="myInput" /></td>
+    </tr>
+    <tr>
+      <td>Dahi</td>
+      <td class="tdPrice"></td>
+      <td class="unit">Pcs</td>
+      <td><input type="number" name="myInput" /></td>
+    </tr>
+    <tr>
+      <td>Tadka</td>
+      <td class="tdPrice"></td>
+      <td class="unit">Pcs</td>
+      <td><input type="number" name="myInput" /></td>
+    </tr>
+    <tr>
+      <td>Plain</td>
+      <td class="tdPrice"></td>
+      <td class="unit">Pcs</td>
+      <td><input type="number" name="myInput" /></td>
+    </tr>
+    <tr>
+      <td>Harvest</td>
+      <td class="tdPrice"></td>
+      <td class="unit">Pcs</td>
+      <td><input type="number" name="myInput" /></td>
+    </tr>
+    <tr>
+      <td>Harvest-Local</td>
+      <td class="tdPrice"></td>
+      <td class="unit">Pcs</td>
+      <td><input type="number" name="myInput" /></td>
+    </tr>
+    <tr>
+      <td>Gatu</td>
+      <td class="tdPrice"></td>
+      <td class="unit">Pcs</td>
+      <td><input type="number" name="myInput" /></td>
+    </tr>
+    <tr>
+      <td>Local-badi</td>
+      <td class="tdPrice"></td>
+      <td class="unit">Pcs</td>
+      <td><input type="number" name="myInput" /></td>
+    </tr>
+    <tr>
+      <th colspan="2">Total</th>
+      <th id="totalAmt" colspan="2"></th>
+    </tr>
+  </table>
+  <button onclick="getData()">Submit</button>
+  <!-- cash tended feature -->
+  <!-- <table class="cash">
+        <tr>
+            <td>Cash Tended</td>
+            <td id="cash-tended" contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td>Balance</td>
+            <th id="bal"></th>
+        </tr>
+    </table> 
+    <button onclick="submit()">Submit</button>-->
+
+  <script src="index.js"></script>
+</body>
+
+</html>
